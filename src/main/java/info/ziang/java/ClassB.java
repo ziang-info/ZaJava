@@ -20,6 +20,8 @@ public class ClassB extends ClassA {
 
     public static void main(String[] args) {
         ClassB cb = new ClassB(100);
+
+        cb.updateInfo(ClassB.name + "Update", ClassA.age + 1);
     }
 
 }

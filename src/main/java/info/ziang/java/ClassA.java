@@ -1,6 +1,6 @@
 package info.ziang.java;
 
-public class ClassA {
+public class ClassA implements InterfaceA{
 
     static {
         System.out.println("Static A");
@@ -18,4 +18,8 @@ public class ClassA {
         System.out.println("I am class A with data " + data);
     }
 
+    @Override
+    public void updateInfo(String name, int age) {
+        System.out.println(ClassA.name + ":" + ClassA.age);
+    }
 }
