@@ -1,6 +1,6 @@
 package info.ziang.java.lock;
 
-public interface Lock {
+public interface ZaLock {
     void lock() throws InterruptedException;
 
     void unlock();

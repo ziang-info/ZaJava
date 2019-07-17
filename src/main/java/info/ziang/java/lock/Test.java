@@ -4,18 +4,16 @@ public class Test {
 
     public static void main(String[] args) {
 
-        NormalLock normalLock = new NormalLock();
+        ZaNormalLock normalLock = new ZaNormalLock();
         Counter counter = new Counter(normalLock);
 
-        Lock reentrantLock = new ReentrantLock();
+        ZaLock reentrantLock = new ZaReentrantLock();
         Counter counter2 = new Counter(reentrantLock);
-
 
         for (int i = 0; i < 10; i++) {
             CounterThread c = new CounterThread(counter2);
             c.start();
         }
-
     }
 }
 

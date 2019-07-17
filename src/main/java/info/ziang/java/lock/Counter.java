@@ -1,10 +1,10 @@
 package info.ziang.java.lock;
 
 public class Counter {
-    private Lock lock = null;
+    private ZaLock lock = null;
     private int count = 0;
 
-    public Counter(Lock lock) {
+    public Counter(ZaLock lock) {
         this.lock = lock;
     }
 

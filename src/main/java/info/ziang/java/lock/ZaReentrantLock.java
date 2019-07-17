@@ -1,6 +1,6 @@
 package info.ziang.java.lock;
 
-public class ReentrantLock implements Lock {
+public class ZaReentrantLock implements ZaLock {
     private boolean isLocked = false;
 
     private Thread lockedBy = null;

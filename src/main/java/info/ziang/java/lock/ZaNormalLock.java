@@ -3,7 +3,7 @@ package info.ziang.java.lock;
 /**
  * 不可重入锁
  */
-public class NormalLock implements Lock{
+public class ZaNormalLock implements ZaLock{
     private boolean isLocked = false;
 
     public synchronized void lock() throws InterruptedException {
